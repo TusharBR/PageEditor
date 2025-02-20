@@ -1,0 +1,23 @@
+.card {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+  margin: 28px 20px 0 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card-content {
+  padding: 15px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d00e0e;
+  margin: 8px 0;
+  line-height: 1.4;
+}
