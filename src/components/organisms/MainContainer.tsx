@@ -21,17 +21,14 @@ const MainContainer= () => {
   function deletebtn1(id: string) {
     console.log("double clicked, id is - ", id);
     setDroppedHeaders(droppedHeaders.filter((item) => item.ki !== id));
-    // console.log("dh",droppedHeaders)
   }
   function deletebtn2(id: string) {
     console.log("double clicked, id is footer - ", id);
     setDroppedFooters(droppedFooters.filter((item) => item.ki !== id));
-    // console.log("dh",droppedHeaders)
   }
   function deletebtn3(id: string) {
     console.log("double clicked, id is footer - ", id);
     setDroppedButtonsAndCards(droppedButtonsAndCards.filter((item) => item.ki !== id));
-    // console.log("dh",droppedHeaders)
   }
 
   // header Drop zone
@@ -67,7 +64,7 @@ const MainContainer= () => {
       const btnno = getUniqueNumber()
       const newId = nanoid(); 
       setDroppedFooters((prev) => [...prev, { ki: newId, val: `Footer ${btnno}` }]);
-      console.log("hii i am",droppedFooters)
+     // console.log("hii i am",droppedFooters)
     },
     collect: (monitor) => ({
       isOverFooter: monitor.isOver(),
